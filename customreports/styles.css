@@ -1,0 +1,60 @@
+.customreportsform { 
+    background: url([[pix:block_customreports|brickwall]]) repeat; padding: 20px 15px 10px 15px; border-radius: 10px;
+}
+.customreportsform .form-group > .col-md-3 { 
+    text-align: right;
+}
+.customreportsform label.col-form-label{ 
+    font-weight: bold; line-height: 34px;
+}
+.customreportsform .form-inline #id_userprofile, .customreportsform .form-inline #id_category, .customreportsform .form-inline #id_course, .customreportsform .form-inline #id_activity {
+    min-width: 250px;
+}
+.spinnercontainer {
+    margin: 30px 0; text-align: center;
+}
+.reportContainer {    
+    margin: 30px 0;
+}
+#profilefield_filters {
+    width: 100%; margin-top: 10px;
+}
+#profilefield_filters .profilebox {
+    padding: 5px; background-color: #eff8ff;
+}
+.form-inline .profilebox label{
+    justify-content: left;
+}
+.removefieldcontainer a{
+    color: #FF0000 !important;
+}
+.mform.customreportsform > .form-group {
+    margin-left: -15px;
+}
+.customreportsform .form-inline #country_container select, #profilefield_filters .profilebox input[type="text"] { 
+    max-width: 80%; 
+}
+#page-blocks-customreports-addreport > .ui-widget-content {
+    border: 1px solid #ddd; background: #fff; color: #333;
+}
+#page-blocks-customreports-addreport > .ui-menu {
+    list-style:none; padding: 10px; display:block; max-width: 230px; max-height: 250px; overflow-y:auto;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 979px) {
+}
+@media (max-width: 768px) {
+    .customreportsform .form-group > .col-md-3 { text-align: left; }
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 420px) {
+}
+@media (max-width: 360px) {
+}
+@media (max-width: 320px) {    
+}

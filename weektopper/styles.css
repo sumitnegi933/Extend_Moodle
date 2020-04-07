@@ -1,0 +1,8 @@
+.block_weektopper { text-align: center; }
+.block_weektopper.block .card-body .card-text { padding: 0; }
+.block_weektopper .card-text h3 { font-family: 'Roboto', sans-serif; color: #f3a523; }
+.block_weektopper .card-text h3 span { color: #333; font-weight: bold; }
+.block_weektopper .card-text h3::after { content: ""; display: inline-block; background-color: #faa519; height: 2px; width: 60px; bottom: 10px; position: relative; }
+.block_weektopper .tw-title { font-size: 16px; color: #337ab7; margin-bottom: 15px; }
+.block_weektopper .tw-item { font-size: 12px; }
+.block_weektopper .carousel-control-prev, .block_weektopper .carousel-control-next { top: initial; background-color: #f3f3f3; color: #f09f18; position: relative; display: inline-block; padding: 10px 5px; }

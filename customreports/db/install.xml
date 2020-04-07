@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/customreports/db" VERSION="2018180902" COMMENT="XMLDB file for Moodle blocks/customreports"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    
+    <TABLES>
+        <TABLE NAME="block_customreport" COMMENT="This table saves information about an instance of block_customreport">
+            
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="name" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The name of quiz."/>
+                <FIELD NAME="filter_from" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Date from"/>
+                <FIELD NAME="filter_to" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Date to"/>
+                <FIELD NAME="filter_profilefield" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="profile field"/>
+                <FIELD NAME="filter_category" TYPE="int" LENGTH="1" DEFAULT="1" NOTNULL="true" SEQUENCE="false" COMMENT="category"/>
+                <FIELD NAME="filter_course" TYPE="int" LENGTH="1" DEFAULT="1" NOTNULL="true" SEQUENCE="false" COMMENT="course"/>
+                <FIELD NAME="filter_activity" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="activity"/>
+                <FIELD NAME="filter_reporttype" TYPE="int" LENGTH="1" DEFAULT="1" NOTNULL="true" SEQUENCE="false" COMMENT="report type"/>
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="timecreated"/>
+                <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="timemodified"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+  
+</XMLDB>

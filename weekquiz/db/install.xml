@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/weekquiz/db" VERSION="2018082401" COMMENT="XMLDB file for Moodle blocks/weekquiz"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    
+    <TABLES>
+        <TABLE NAME="block_weekquiz_availability" COMMENT="This table saves information about an instance of block_weekquiz">
+            
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="quiz" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The name of quiz."/>
+                <FIELD NAME="available_from" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="time of quiz available from"/>
+                <FIELD NAME="available_to" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="time of quiz available till"/>
+                <FIELD NAME="display" TYPE="int" LENGTH="1" DEFAULT="1" NOTNULL="true" SEQUENCE="false" COMMENT="hide status."/>
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="the time of create."/>
+                <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="the time of update"/>
+            </FIELDS>
+               <KEYS>
+                   <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+               </KEYS>
+        </TABLE>
+    </TABLES>
+  
+</XMLDB>

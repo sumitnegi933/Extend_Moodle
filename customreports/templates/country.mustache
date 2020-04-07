@@ -1,0 +1,26 @@
+{{#field}}
+<div id="{{field}}_container" class="form-group row fitem profilebox">
+    <div class="col-md-3">
+        <label>{{label}}: </label>
+    </div>
+    <div class="col-md-4">
+        <select class="custom-select" name="filter_profile_operator[{{field}}]">
+            <option value='eq'>Equals to</option>
+            <option value='like'>Contains</option>
+            <option value='startwith' >Starts with</option>
+            <option value='endswith' >Ends with</option>
+        </select>
+    </div>
+    <div class="col-md-5">
+       <select name="filter_profile[{{field}}]" placeholder="{{label}}" class='custom-select user_profile_filter'" id="{{field}}">
+       {{#countries}}
+       <option value="{{code}}">{{country}}</option>
+       {{/countries}}
+       </select>
+
+<span class="removefieldcontainer" profilefield="{{field}}" profilelabel="{{label}}" "><a href='#'>X</a></span>    
+    </div>
+</div>
+</div>
+{{/field}}
+
